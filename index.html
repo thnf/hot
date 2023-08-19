@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="io-grey-mode" style="transform: none;"><head> 
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" id="bootstrap-css" href="./bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="swiper-css" href="./swiper-bundle.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="style-css" href="./style.min.css" type="text/css" media="all">
+  <script type="text/javascript" src="https://asset.bpuxi.top/main/jquery.min.js"></script>
+    <style type="text/css">
+      body {
+      text-align: center;
+      }
+      </style>
+  </head> 
+    <body class="home blog mini-sidebar" style="transform: none; text-align: center">  <div class="" style="margin-top:0rem!important"><div class="slice-article mb-4"> <div class="row no-gutters"> 
+      <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;微博热搜</h3> 
+        <ul style="text-align: left" id="weibo">
+         <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div>  
+
+         <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;百度热搜</h3> 
+        <ul style="text-align: left" id="baidu">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div> 
+         <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;澎湃新闻热搜</h3> 
+        <ul style="text-align: left" id="thepaper">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div> 
+         <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;哔哩哔哩热搜</h3> 
+        <ul style="text-align: left" id="bilibili">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div> 
+         <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;知乎热搜</h3> 
+        <ul style="text-align: left" id="zhihu">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div> 
+  <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;腾讯新闻热搜</h3> 
+        <ul style="text-align: left" id="newsqq">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div>   
+  <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;百度贴吧热搜</h3> 
+        <ul style="text-align: left" id="tieba">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div>   
+  <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;今日头条热搜</h3> 
+        <ul style="text-align: left" id="toutiao">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div>   
+  <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;少数派热搜</h3> 
+        <ul style="text-align: left" id="sspai">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div>   
+  <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;稀土掘金热搜</h3> 
+        <ul style="text-align: left" id="juejin">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div>   
+  <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;36氪热搜</h3> 
+        <ul style="text-align: left" id="36kr">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">热搜</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div>   
+      <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-4 mt-md-0" style="height: 400px; width: 300px; overflow: auto"> <div class="card new-news mb-0 overflow-hidden rounded-xl"> <h3 class="h6 news_title"><i class="iconfont icon-category"></i>&nbsp;&nbsp;历史上的今天</h3> 
+        <ul style="text-align: left" id="calendar">
+            <li><i class="iconfont icon-point"></i> <a href="" class="text-sm" target="_blank"><span>加载中，请稍等……</span></a> <div class="d-flex flex-fill text-xs text-muted"> <a class="mr-2" target="_blank">历史上的今天</a> <div class="flex-fill"></div> </div> </li> 
+         </ul> </div> </div> 
+
+      <script>
+    $(document).ready(function() {
+      //weibo
+  var content;
+$('#weibo').load('https://api.bpuxi.top/hot/weibohot.php', function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#weibo').html(content);
+    }
+  });
+       //baidu
+  var content;
+$('#baidu').load('https://api.bpuxi.top/hot/baidu.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#baidu').html(content);
+    }
+  });
+      //thepaper
+  var content;
+$('#thepaper').load('https://api.bpuxi.top/hot/thepaper.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#thepaper').html(content);
+    }
+  });
+      //哔哩哔哩
+  var content;
+$('#bilibili').load('https://api.bpuxi.top/hot/bilibili.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#bilibili').html(content);
+    }
+  });
+      //知乎
+  var content;
+$('#zhihu').load('https://api.bpuxi.top/hot/zhihu.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#zhihu').html(content);
+    }
+  });
+      //newsqq
+      var content;
+$('#newsqq').load('https://api.bpuxi.top/hot/newsqq.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#newsqq').html(content);
+    }
+  });
+      //tieba
+  var content;
+$('#tieba').load('https://api.bpuxi.top/hot/tieba.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#tieba').html(content);
+    }
+  });
+        //toutiao
+  var content;
+$('#toutiao').load('https://api.bpuxi.top/hot/toutiao.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#toutiao').html(content);
+    }
+  });
+      //sspai
+  var content;
+$('#sspai').load('https://api.bpuxi.top/hot/sspai.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#sspai').html(content);
+    }
+  });
+      //
+  var content;
+$('#juejin').load('https://api.bpuxi.top/hot/juejin.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#juejin').html(content);
+    }
+  });
+      //36氪
+  var content;
+$('#36kr').load('https://api.bpuxi.top/hot/36kr.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#36kr').html(content);
+    }
+  });
+       //历史上的今天
+  var content;
+$('#calendar').load('https://api.bpuxi.top/hot/calendar.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#calendar').html(content);
+    }
+  });
+      /*  //
+  var content;
+$('#').load('https://api.bpuxi.top/hot/.php',
+  function(response, status, xhr) {
+    if (status == "success") {
+      // 将加载的内容赋值给变量
+      content = response;
+      // 在控制台输出内容
+      $('#').html(content);
+    }
+  });*/
+});</script>
+  
+  </body></html>
